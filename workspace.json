@@ -79,7 +79,10 @@
               "apps/zlt/web-zlt/src/favicon.ico",
               "apps/zlt/web-zlt/src/assets"
             ],
-            "styles": ["apps/zlt/web-zlt/src/styles.scss"],
+            "styles": [
+              "apps/zlt/web-zlt/src/styles.scss",
+              "apps/zlt/web-zlt/src/styles.less"
+            ],
             "scripts": []
           },
           "configurations": {
