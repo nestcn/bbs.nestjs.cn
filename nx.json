@@ -22,5 +22,19 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "libs": {
+      "tags": []
+    },
+    "xplat": {
+      "tags": []
+    },
+    "zlt-web-zlt": {
+      "tags": []
+    },
+    "zlt-web-zlt-e2e": {
+      "tags": [],
+      "implicitDependencies": ["zlt-web-zlt"]
+    }
+  }
 }
