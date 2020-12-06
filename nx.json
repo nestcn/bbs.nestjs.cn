@@ -29,12 +29,12 @@
     "xplat": {
       "tags": []
     },
-    "zlt-web-zlt": {
+    "nx-web-ng": {
       "tags": []
     },
-    "zlt-web-zlt-e2e": {
+    "nx-web-ng-e2e": {
       "tags": [],
-      "implicitDependencies": ["zlt-web-zlt"]
+      "implicitDependencies": ["nx-web-ng"]
     }
   }
 }

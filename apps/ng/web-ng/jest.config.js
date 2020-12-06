@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'zlt-web-zlt',
+  displayName: 'nx-web-ng',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../coverage/apps/zlt/web-zlt',
+  coverageDirectory: '../../../coverage/apps/ng/web-ng',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('zlt-web-zlt', () => {
+describe('nx-web-ng', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('zlt-web-zlt', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to zlt-web-zlt!');
+    getGreeting().contains('Welcome to nx-web-ng!');
   });
 });
