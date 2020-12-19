@@ -1,8 +1,26 @@
-<ul>
-    <li>title</li>
-    <li>
-        <nx-search-box></nx-search-box>
-    </li>
-    <li>注册</li>
-    <li>登录</li>
-</ul>
+<header id="header" class="App-header navbar-fixed-top">
+    <div class="container">
+        <h1 class="Header-title">
+            <a href="https://www.baidu.com" id="home-link">
+                Flarum/beta
+            </a>
+        </h1>
+        <div id="header-secondary" class="Header-secondary">
+            <ul class="Header-controls">
+                <li class="item-search">
+                    <nx-search-box></nx-search-box>
+                </li>
+                <li class="item-signUp">
+                    <button class="Button Button--link" type="button" title="Sign Up">
+                        <span class="Button-label">Sign Up</span>
+                    </button>
+                </li>
+                <li class="item-logIn">
+                    <button class="Button Button--link" type="button" title="Log In">
+                        <span class="Button-label">Log In</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

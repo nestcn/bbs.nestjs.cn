@@ -1,1 +1,39 @@
-<div>NavigationBar</div>
+<nav class="IndexPage-nav sideNav">
+    <ul>
+        <li class="App-primaryControl item-newDiscussion">
+            <button class="Button Button--primary IndexPage-newDiscussion hasIcon" itemclassname="App-primaryControl"
+                type="button" title="Start a Discussion">
+                <i class="icon fas fa-edit Button-icon"></i>
+                <span class="Button-label">Start a Discussion</span>
+            </button>
+        </li>
+        <li class="item-nav">
+            <div class="ButtonGroup Dropdown dropdown App-titleControl Dropdown--select itemCount4">
+                <button class="Dropdown-toggle Button" data-toggle="dropdown" aria-expanded="false">
+                    <span class="Button-label">All Discussions</span>
+                    <i class="icon fas fa-sort Button-caret"></i>
+                </button>
+                <ul class="Dropdown-menu dropdown-menu Dropdown-menu--top Dropdown-menu--right">
+                    <li class="item-allDiscussions active">
+                        <a href="/" active="true" type="button" title="All Discussions" class="hasIcon">
+                            <i class="icon far fa-comments Button-icon"></i>
+                            <span class="Button-label">All Discussions</span>
+                        </a>
+                    </li>
+
+                    <li class="item-tags"><a href="/tags" active="false" type="button" title="Tags" class="hasIcon">
+                            <i class="icon fas fa-th-large Button-icon"></i>
+                            <span class="Button-label">Tags</span></a>
+                    </li>
+                    
+                    <li class="Dropdown-separator"></li>
+                    <li class="item-tag1">
+                        <a class="TagLinkButton hasIcon" href="/t/general">
+                            <span class="Button-icon icon TagIcon"
+                                style="background-color: rgb(136, 136, 136);"></span>General</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
