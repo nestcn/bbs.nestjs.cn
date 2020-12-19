@@ -8,11 +8,12 @@
             </button>
         </li>
         <li class="item-nav">
-            <div class="ButtonGroup Dropdown dropdown App-titleControl Dropdown--select itemCount4">
-                <button class="Dropdown-toggle Button" data-toggle="dropdown" aria-expanded="false">
+            <div class="ButtonGroup Dropdown dropdown App-titleControl Dropdown--select itemCount4" [class.open]="open">
+                <button (click)="open=true" class="Dropdown-toggle Button" data-toggle="dropdown" aria-expanded="false">
                     <span class="Button-label">All Discussions</span>
                     <i class="icon fas fa-sort Button-caret"></i>
                 </button>
+                <div *ngIf="open" (click)="open=false" class="dropdown-backdrop"></div>
                 <ul class="Dropdown-menu dropdown-menu Dropdown-menu--top Dropdown-menu--right">
                     <li class="item-allDiscussions active">
                         <a href="/" active="true" type="button" title="All Discussions" class="hasIcon">

@@ -7,6 +7,9 @@ import { BaseComponent } from '@myworkspace/core';
   templateUrl: 'navigation-bar.component.html',
 })
 export class NavigationBarComponent extends BaseComponent {
+  /** 是否展开 */
+  open: boolean = false;
+
   constructor() {
     super();
   }
