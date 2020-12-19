@@ -1,8 +1,19 @@
 import { HomeComponent } from './home.component';
 
-import { TopBarComponent } from './top-bar/top-bar.component';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
-export const HOME_COMPONENTS = [HomeComponent, TopBarComponent];
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+
+import { DiscussionListComponent } from './discussion-list/discussion-list.component';
+
+export const HOME_COMPONENTS = [
+  HomeComponent,
+  ToolBarComponent,
+  NavigationBarComponent,
+  DiscussionListComponent,
+];
 
 export * from './home.component';
-export * from './top-bar/top-bar.component';
+export * from './tool-bar/tool-bar.component';
+export * from './navigation-bar/navigation-bar.component';
+export * from './discussion-list/discussion-list.component';

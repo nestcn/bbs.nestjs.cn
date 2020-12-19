@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { BaseComponent } from '@myworkspace/core';
 
 @Component({
-  selector: 'myworkspace-top-bar',
-  templateUrl: 'top-bar.component.html',
+  selector: 'myworkspace-tool-bar',
+  templateUrl: 'tool-bar.component.html',
 })
-export class TopBarComponent extends BaseComponent {
+export class ToolBarComponent extends BaseComponent {
   constructor() {
     super();
   }
