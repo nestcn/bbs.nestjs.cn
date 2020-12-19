@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 
 import { BaseComponent } from '@myworkspace/core';
+import { HomeService } from '../home.service';
 
 @Component({
   selector: 'nx-tool-bar',
-  styleUrls: ['tool-bar.component.scss'],
   templateUrl: 'tool-bar.component.html',
 })
 export class ToolBarComponent extends BaseComponent {
-  constructor() {
+  constructor(
+    public homeService: HomeService
+  ) {
     super();
   }
 }

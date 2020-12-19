@@ -1,1 +1,35 @@
-<div>LoginIn</div>
+<div class="Modal modal-dialog LogInModal Modal--small">
+    <div class="Modal-content">
+        <div class="Modal-close App-backControl"><button (click)="homeService.modalStatus=null" class="Button Button--icon Button--link hasIcon" type="button"
+                title=""><i class="icon fas fa-times Button-icon"></i><span class="Button-label"></span></button></div>
+        <form>
+            <div class="Modal-header">
+                <h3 class="App-titleControl App-titleControl--text">Log In</h3>
+            </div>
+            <div class="Modal-body">
+                <div class="LogInButtons"></div>
+                <div class="Form Form--centered">
+                    <div class="Form-group"><input class="FormControl" name="identification" type="text"
+                            placeholder="Username or Email"
+                            bidi="function a(e){return arguments.length&amp;&amp;e!==n.SKIP&amp;&amp;(t=e,o(a)&amp;&amp;(a._changing(),a._state=&quot;active&quot;,r.forEach((function(e,n){e(s[n](t))})))),t}">
+                    </div>
+                    <div class="Form-group"><input class="FormControl" name="password" type="password"
+                            placeholder="Password"
+                            bidi="function a(e){return arguments.length&amp;&amp;e!==n.SKIP&amp;&amp;(t=e,o(a)&amp;&amp;(a._changing(),a._state=&quot;active&quot;,r.forEach((function(e,n){e(s[n](t))})))),t}">
+                    </div>
+                    <div class="Form-group">
+                        <div><label class="checkbox"><input type="checkbox"
+                                    bidi="function a(e){return arguments.length&amp;&amp;e!==n.SKIP&amp;&amp;(t=e,o(a)&amp;&amp;(a._changing(),a._state=&quot;active&quot;,r.forEach((function(e,n){e(s[n](t))})))),t}">Remember
+                                Me</label></div>
+                    </div>
+                    <div class="Form-group"><button class="Button Button--primary Button--block" type="submit"
+                            title="Log In"><span class="Button-label">Log In</span></button></div>
+                </div>
+            </div>
+            <div class="Modal-footer">
+                <p class="LogInModal-forgotPassword"><a (click)="homeService.modalStatus=3">Forgot password?</a></p>
+                <p class="LogInModal-signUp">Don't have an account? <a (click)="homeService.modalStatus=2">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</div>

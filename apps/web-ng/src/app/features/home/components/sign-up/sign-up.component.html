@@ -1,1 +1,32 @@
-<div>SignUp</div>
+<div class="Modal modal-dialog Modal--small SignUpModal">
+    <div class="Modal-content">
+        <div class="Modal-close App-backControl"><button (click)="homeService.modalStatus=null" class="Button Button--icon Button--link hasIcon" type="button"
+                title=""><i class="icon fas fa-times Button-icon"></i><span class="Button-label"></span></button></div>
+        <form>
+            <div class="Modal-header">
+                <h3 class="App-titleControl App-titleControl--text">Sign Up</h3>
+            </div>
+            <div class="Modal-body">
+                <div class="LogInButtons"></div>
+                <div class="Form Form--centered">
+                    <div class="Form-group"><input class="FormControl" name="username" type="text"
+                            placeholder="Username"
+                            bidi="function a(e){return arguments.length&amp;&amp;e!==n.SKIP&amp;&amp;(t=e,o(a)&amp;&amp;(a._changing(),a._state=&quot;active&quot;,r.forEach((function(e,n){e(s[n](t))})))),t}">
+                    </div>
+                    <div class="Form-group"><input class="FormControl" name="email" type="email" placeholder="Email"
+                            bidi="function a(e){return arguments.length&amp;&amp;e!==n.SKIP&amp;&amp;(t=e,o(a)&amp;&amp;(a._changing(),a._state=&quot;active&quot;,r.forEach((function(e,n){e(s[n](t))})))),t}">
+                    </div>
+                    <div class="Form-group"><input class="FormControl" name="password" type="password"
+                            placeholder="Password"
+                            bidi="function a(e){return arguments.length&amp;&amp;e!==n.SKIP&amp;&amp;(t=e,o(a)&amp;&amp;(a._changing(),a._state=&quot;active&quot;,r.forEach((function(e,n){e(s[n](t))})))),t}">
+                    </div>
+                    <div class="Form-group"><button class="Button Button--primary Button--block" type="submit"
+                            title="Sign Up"><span class="Button-label">Sign Up</span></button></div>
+                </div>
+            </div>
+            <div class="Modal-footer">
+                <p class="SignUpModal-logIn">Already have an account? <a (click)="homeService.modalStatus=1">Log In</a></p>
+            </div>
+        </form>
+    </div>
+</div>

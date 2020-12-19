@@ -11,12 +11,14 @@
                     <nx-search-box></nx-search-box>
                 </li>
                 <li class="item-signUp">
-                    <button class="Button Button--link" type="button" title="Sign Up">
+                    <button (click)="homeService.modalStatus=2" class="Button Button--link" type="button"
+                        title="Sign Up">
                         <span class="Button-label">Sign Up</span>
                     </button>
                 </li>
                 <li class="item-logIn">
-                    <button class="Button Button--link" type="button" title="Log In">
+                    <button (click)="homeService.modalStatus=1" class="Button Button--link" type="button"
+                        title="Log In">
                         <span class="Button-label">Log In</span>
                     </button>
                 </li>

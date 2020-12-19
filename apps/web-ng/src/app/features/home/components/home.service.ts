@@ -4,5 +4,7 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class HomeService {
+    /** 模态框的状态 */
+    modalStatus: number = null;
     constructor() { }
 }

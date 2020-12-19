@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 import { BaseComponent } from '@myworkspace/core';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'nx-home',
@@ -13,12 +14,12 @@ export class HomeComponent extends BaseComponent implements OnInit {
   scrolled: boolean = false;
 
   constructor(
+    public homeService: HomeService
   ) {
     super()
   }
   ngOnInit(): void {
   }
-
 
   @HostListener('window:scroll', ['$event'])
   windowsScroll(event: Event) {

@@ -1,33 +1,50 @@
-<div id="app" class="App affix App--index" [ngClass]="{drawerOpen:drawerOpen,scrolled:scrolled}">
-    <div id="app-navigation" class="App-navigation">
-        <div class="Navigation ButtonGroup App-backControl">
-            <button (click)="drawerOpen=true" class="Button Button--icon Navigation-drawer hasIcon" type="button"
-                title="">
-                <i class="icon fas fa-bars Button-icon"></i>
-                <span class="Button-label"></span>
-            </button>
+<div [ngClass]="{'modal-open': !!homeService.modalStatus}">
+    <div id="app" class="App affix App--index" [ngClass]="{drawerOpen:drawerOpen,scrolled:scrolled}">
+        <div id="app-navigation" class="App-navigation">
+            <div class="Navigation ButtonGroup App-backControl">
+                <button (click)="drawerOpen=true" class="Button Button--icon Navigation-drawer hasIcon" type="button"
+                    title="">
+                    <i class="icon fas fa-bars Button-icon"></i>
+                    <span class="Button-label"></span>
+                </button>
+            </div>
         </div>
-    </div>
 
-    <div id="drawer" class="App-drawer">
-        <nx-tool-bar></nx-tool-bar>
-    </div>
+        <div id="drawer" class="App-drawer">
+            <nx-tool-bar></nx-tool-bar>
+        </div>
 
-    <main class="App-content">
-        <div id="content">
-            <div class="IndexPage">
-                <div></div>
-                <div class="container">
-                    <div class="sideNavContainer">
-                        <nx-navigation-bar></nx-navigation-bar>
-                        <div class="IndexPage-results sideNavOffset">
-                            <nx-discussion-list></nx-discussion-list>
+        <main class="App-content">
+            <div id="content">
+                <div class="IndexPage">
+                    <div></div>
+                    <div class="container">
+                        <div class="sideNavContainer">
+                            <nx-navigation-bar></nx-navigation-bar>
+                            <div class="IndexPage-results sideNavOffset">
+                                <nx-discussion-list></nx-discussion-list>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </main>
+    </div>
+    <div id="modal">
+        <div (click)="homeService.modalStatus=null;" class="ModalManager modal fade" [class.in]="!!homeService.modalStatus" [ngStyle]="{display: homeService.modalStatus?'block':'none'}">
+                <ng-container (click)="$event.stopPropagation()" [ngSwitch]="homeService.modalStatus">
+                    <ng-container *ngSwitchCase="1">
+                        <nx-login-in></nx-login-in>
+                    </ng-container>
+                    <ng-container *ngSwitchCase="2">
+                        <nx-sign-up></nx-sign-up>
+                    </ng-container>
+                    <ng-container *ngSwitchCase="3">
+                        <nx-forgot-password></nx-forgot-password>
+                    </ng-container>
+                </ng-container>
         </div>
-    </main>
+    </div>
+    <div (click)="drawerOpen=false;" class="drawer-backdrop fade in" *ngIf="drawerOpen"></div>
+    <div class="modal-backdrop fade in" *ngIf="homeService.modalStatus"></div>
 </div>
-
-<div (click)="drawerOpen=false" class="drawer-backdrop fade in" *ngIf="drawerOpen"></div>
