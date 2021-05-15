@@ -60,7 +60,7 @@
     "@nstudio/web": "*",
     "@nstudio/web-angular": "*",
     "@nstudio/xplat": "^10.3.9",
-    "@types/jest": "~25.1.4",
+    "@types/jest": "25.2.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~6.0.0",
     "dotenv": "6.2.0",
