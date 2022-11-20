@@ -61,7 +61,7 @@
     "@nstudio/web-angular": "*",
     "@nstudio/xplat": "^10.3.9",
     "@types/jest": "~25.1.4",
-    "@types/node": "~8.9.4",
+    "@types/node": "~8.10.0",
     "codelyzer": "~6.0.0",
     "dotenv": "6.2.0",
     "eslint": "7.10.0",
